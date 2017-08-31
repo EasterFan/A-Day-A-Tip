@@ -1,6 +1,7 @@
 # A day , A exercise
-2017-08-31 [输入框聚焦效果]
+2017-08-31 [输入框聚焦效果-onfocus]
 2017-08-30 [今天星期几-switch](date.js)
+2017-08-29 [鼠标划过按钮变色-onmouseover](btnColorChange.html)
 2017-08-28 [求一组数字的平均值](avg.js)
 2017-08-07 [计算每个单词出现的次数](String.js)
 2017-07-27 
