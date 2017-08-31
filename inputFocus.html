@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框获得焦点</title>
+    <style>
+        .box{
+            padding: 50px;
+        }
+        .phone{
+            float:left;
+
+        }
+        .right{
+            float:left;
+            font-size: 14px;
+            margin-left: 10px;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var phone = document.getElementById("phone");
+            var right = document.getElementById("right");
+
+            phone.onfocus=function () {
+                right.style.display="block";
+            }
+
+            phone.onblur=function () {
+                var phoneVal = this.value;
+                if(phoneVal.length==11 && isNaN(phoneVal)==false)
+                {
+                    right.innerHTML = "录入成功";
+                    right.style.display="block";
+                }else {
+                    right.innerHTML = "您的手机号不正确";
+                    right.style.display="block";
+
+                }
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="phone">
+        <input type="text" id="phone" placeholder="please input your phone number">
+    </div>
+
+    <div class="right" id="right">
+        请输入您的手机号
+    </div>
+</div>
+
+</body>
+</html>
