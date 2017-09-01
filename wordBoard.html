@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板字数限制提醒</title>
+    <style>
+        .text span{ font-weight: bold;color: #f00;  }
+
+        .text em{font-style: normal}
+    </style>
+
+    <script>
+        window.onload = function () {
+            //获取文本框
+            var textarea = document.getElementById("textarea");
+            var count = document.getElementById("count");
+            // 绑定键盘事件
+            document.onkeyup = function () {
+                // 获取文本框已输入的值长度
+                var textarealen = textarea.value.length;
+                var total = 50;
+                var left = total - textarealen;
+                count.innerHTML = left;
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <p class="text">
+        您还可以输入<span><em id="count">50</em>/50</span>
+    </p>
+    <div class="input">
+        <textarea cols="70" rows="4" id="textarea"></textarea>
+    </div>
+</div>
+</body>
+</html>
