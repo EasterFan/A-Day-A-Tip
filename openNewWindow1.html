@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象打开/关闭新窗口</title>
+    <script>
+        window.onload = function () {
+            window.open("openNewWindow2.html","openedWindow","width=400,height=200,left=0,top=0,toolbar=no,menubar=no," +
+                "scrollbars=no,location=no,status=no");
+
+            var quit = document.getElementById("quit");
+            quit.onclick = function () {
+                window.close();
+            }
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="quit" value="退出">
+</body>
+</html>
