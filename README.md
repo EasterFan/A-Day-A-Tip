@@ -1,4 +1,5 @@
 # A day , A exercise
+2017-09-03 [两种方法实现js定时器-setTimeOut/setInterval](setIntervalAndsetTimeOut.html)  
 2017-09-02 [JS控制打开/关闭新窗口-window.open](openNewWindow1.html)  
 2017-09-01 [留言板字数限制提醒-onkeyup](wordBoard.html)  
 2017-08-31 [输入框聚焦效果-onfocus](inputFocus.html)  

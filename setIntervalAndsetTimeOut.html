@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>每秒自增，到10停止-两种定时器实现</title>
+    <script>
+        var num = 1,
+            max = 10;
+
+//        setInterval + 匿名函数
+//       var timer = setInterval(function () {
+//            console.log(num);
+//            num++;
+//            if(num==max){
+//                clearInterval(timer);
+//            }
+//        },1000);
+//
+//          setTimeOut + 自定义函数
+       var countNum = function () {
+           console.log(num);
+           num++;
+           if(num>max){
+               clearTimeout(timer2);
+           }else {
+               setTimeout(countNum,1000);
+           }
+       }
+       var timer2 = setTimeout(countNum,1000);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
